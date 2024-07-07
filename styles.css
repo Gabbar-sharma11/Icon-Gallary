@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+header{
+    width: 100%;
+    background-color: aqua;
+    padding: 10px 0;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1120px;
+
+}
+ 
+.icon-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+    font-size: 10rem;
+    color: blue;
+    flex-direction: column;
+}
+.icon a{
+    font-size: 30px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+.icon:hover {
+    transform: scale(1.1);
+}
+.instagram{
+    color: red;
+    
+}
+.whatsapp{
+    color: rgb(27, 234, 27);
+}
+@media (max-width: 640px){
+    main{
+        width: auto;
+
+    }
+    header{
+        width: 100%;
+    }
+    header h2{
+        font-size: 2rem;
+    }
+    
+}
